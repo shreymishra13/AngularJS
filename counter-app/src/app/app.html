@@ -1,0 +1,12 @@
+<h1 style="text-align: center; color:cadetblue; margin-bottom:50px;">Counter app</h1>
+
+<app-counter-display [counterValue]="counter"></app-counter-display>
+
+<div style="text-align: center;">
+<app-my-btn label="Decrement" btnClass="btn btn-danger"  (action)="handleAction($event)"></app-my-btn>
+<app-my-btn label="Reset" btnClass="btn btn-dark" (action)="handleAction($event)"></app-my-btn>
+<app-my-btn label="Increment" btnClass="btn btn-success" (action)="handleAction($event)"></app-my-btn>    
+</div>
+
+
+<router-outlet />
