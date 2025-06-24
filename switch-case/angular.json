@@ -3,12 +3,12 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "counter-app": {
+    "switch-case": {
       "projectType": "application",
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix" : "app",
+      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular/build:application",
@@ -21,13 +21,8 @@
                 "input": "public"
               }
             ],
-            "scripts": [
-  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-],
-
             "styles": [
-              "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -63,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "counter-app:build:production"
+              "buildTarget": "switch-case:build:production"
             },
             "development": {
-              "buildTarget": "counter-app:build:development"
+              "buildTarget": "switch-case:build:development"
             }
           },
           "defaultConfiguration": "development"

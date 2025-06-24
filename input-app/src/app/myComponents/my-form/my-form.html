@@ -16,5 +16,21 @@
         <br>
         <input type="submit" value="Set Name" (click)="setName()" class="btn btn-outline-success">
         <input type="submit" value="Get name" (click)="getName()"class="btn btn-outline-danger">
+
+        <hr>
+        <hr>
+        <h3>Your email is : {{displayEmail}} </h3>
+        <label for="email" class="my-2">Enter your email</label>
+        <br>
+        <input type="email" name="email" name="email" placeholder="Enter your email here" value="{{email}}" #emailField>
+        
+        <br>
+        <br>
+        <input type="submit" value="Set Name" (click)="setEmail()" class="btn btn-outline-success">
+        <input type="submit" value="Get name" (click)="getEmail(emailField.value)"class="btn btn-outline-danger">
+
+
+
+
     </div>
 </div>

@@ -1,0 +1,41 @@
+<div class="container text-center py-5">
+    <div style="width: 50%;" class=" container d-flex justify-content-evenly my-5">
+        <button class="btn btn-danger" (click)="handleClick($event)">
+            Red
+        </button>
+        <button class="btn btn-warning" (click)="handleClick($event)">
+            Yellow
+        </button>
+        <button class="btn btn-success" (click)="handleClick($event)" >
+            Green
+        </button>
+        <button class="btn btn-dark" (click)="handleClick($event)">
+            Other
+        </button>
+    </div>
+
+
+    @switch (color) {
+    @case ('red') {
+    <h1 style="color: red;">
+        Red Color
+    </h1>
+    }
+    @case ('green') {
+    <h1 style="color: green;">
+        Green Color
+    </h1>
+    }
+    @case ('yellow') {
+    <h1 style="color: Yellow;">
+        Green Color
+    </h1>
+    }
+ 
+    @default {
+    <h1 style="color: gray;">
+        Default Color
+    </h1>
+    }
+    }
+</div>

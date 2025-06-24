@@ -1,0 +1,37 @@
+
+<hr><hr>
+
+
+
+<div class="container bg-warning text-center p-5">
+     <h1>if-else-if-display works!</h1>
+    <div class="d-flex justify-content-evenly my-div mx-auto my-5">
+        <button class="btn btn-danger" (click)="setDanger()">
+    Red
+</button>
+<button class="btn btn-success" (click)="setSuccess()">Green
+
+</button>
+<button class="btn btn-primary" (click)="setPrimary()">Blue</button>
+<button class="btn btn-dark" (click)="setDark()">Black</button>
+    </div>
+   
+
+@if(color=='danger'){
+
+    <div class="bg-danger mx-auto toggle-div"></div>
+}  
+@else if(color==='success'){
+<div class="bg-success mx-auto toggle-div"></div> 
+}
+     
+@else if(color==='primary'){
+<div class="bg-primary mx-auto toggle-div"></div>
+}
+     
+@else {
+<div class="bg-dark mx-auto toggle-div"></div> 
+}
+     
+     
+</div>

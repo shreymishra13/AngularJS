@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 })
 export class MyForm {
   name : string ="";
+  email : string="";
   displayName :string = "";
+  displayEmail :string = "";
  handleEvent(event : Event){
-    // console.log(event)
     const name = (event.target as HTMLInputElement).value;
-    // const 
     console.log(name);
     this.name = name ;
 
@@ -29,6 +29,16 @@ setName(){
 getName(){
   this.displayName =this.name.toUpperCase();
 
+}
+getEmail(email:string){
+  console.log(email);
+  this.displayEmail = email;
+
+
+
+}
+setEmail(){
+  this.email = "saurbh.misra@gmail.com"
 }
 
  
