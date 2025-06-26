@@ -1,0 +1,41 @@
+
+
+<div class="container bg-light border text-center">
+
+  <h1 class="display-1 text-center my-5">My Todo List</h1>
+  <div class="input-group input-group-sm mb-3 mx-auto" style="width: 50%;">
+  <input [(ngModel)]="newTask" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Enter your Task here">
+    
+
+</div>
+  <button (click)="addTask()" class="btn btn-success m-3">
+    Add Task
+  </button>
+
+  <ol class="list-group list-group-flush mx-auto mb-5 " style="width: 50%;">
+@for (task of TaskList; track task.time) {
+  
+    <li class="list-group-item">
+
+      <span >
+        {{task.time}}  :
+      </span>
+      {{task.newTask}}
+   
+
+    <button class="btn btn-danger mx-3" (click)="removeTask($event)">
+      Delete
+
+    </button>
+
+  </li>
+}
+</ol>
+
+
+
+
+
+ 
+
+<router-outlet />
